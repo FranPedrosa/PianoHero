@@ -118,12 +118,15 @@ void setup() {
 
 
 void loop() {
-  //apaga todos os leds
-  apagar();
-  digitalWrite(erro,LOW);
+  
   
   //enquanto a sequencia nao acabar
   if(tempo < 21 ){
+    
+    //apaga todos os leds
+    apagar();
+    digitalWrite(erro,LOW);
+    
     red();//acende os leds vermelhos
     green();//acende os leds verdes
     blue();//acende os leds azuis
